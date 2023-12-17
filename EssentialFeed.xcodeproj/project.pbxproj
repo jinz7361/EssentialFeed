@@ -34,6 +34,7 @@
 		B3C086F92B2E3AB6009AFCA2 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C086F82B2E3AB6009AFCA2 /* FeedCacheTestHelpers.swift */; };
 		B3C086FB2B2E3B89009AFCA2 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C086FA2B2E3B89009AFCA2 /* SharedTestHelpers.swift */; };
 		B3C086FD2B2E4C8E009AFCA2 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C086FC2B2E4C8E009AFCA2 /* FeedCachePolicy.swift */; };
+		B3C086FF2B2E8F4B009AFCA2 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C086FE2B2E8F4B009AFCA2 /* CodableFeedStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B3C086F82B2E3AB6009AFCA2 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		B3C086FA2B2E3B89009AFCA2 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		B3C086FC2B2E4C8E009AFCA2 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		B3C086FE2B2E8F4B009AFCA2 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				B3C086E62B2AAD3D009AFCA2 /* CacheFeedUseCaseTests.swift */,
 				B3C086F12B2C0C96009AFCA2 /* LoadFeedFromCacheUseCaseTests.swift */,
 				B3C086F62B2E3614009AFCA2 /* ValidateFeedCacheUseCaseTests.swift */,
+				B3C086FE2B2E8F4B009AFCA2 /* CodableFeedStoreTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C086FF2B2E8F4B009AFCA2 /* CodableFeedStoreTests.swift in Sources */,
 				B347D4962AFD82AF002C6817 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				B39CDD152B1C34BB008FCC66 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				B3C086FB2B2E3B89009AFCA2 /* SharedTestHelpers.swift in Sources */,

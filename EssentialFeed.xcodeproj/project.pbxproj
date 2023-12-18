@@ -311,8 +311,8 @@
 		B3C087232B310392009AFCA2 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				B3C0872B2B310659009AFCA2 /* Codable */,
 				B3C087242B310468009AFCA2 /* CoreData */,
-				B3C087002B2FBC87009AFCA2 /* CodableFeedStore.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -327,6 +327,14 @@
 				B3C087202B30FA1A009AFCA2 /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B3C0872B2B310659009AFCA2 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				B3C087002B2FBC87009AFCA2 /* CodableFeedStore.swift */,
+			);
+			path = Codable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

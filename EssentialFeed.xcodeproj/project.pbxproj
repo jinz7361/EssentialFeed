@@ -49,6 +49,7 @@
 		B3C087262B31048D009AFCA2 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C087252B31048D009AFCA2 /* CoreDataHelpers.swift */; };
 		B3C087282B310530009AFCA2 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C087272B310530009AFCA2 /* ManagedCache.swift */; };
 		B3C0872A2B310547009AFCA2 /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C087292B310547009AFCA2 /* ManagedFeedImage.swift */; };
+		B3C0872C2B310C9D009AFCA2 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CDD142B1C34BB008FCC66 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -563,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C0870D2B30EE12009AFCA2 /* EssentialFeedCacheIntegrationTests.swift in Sources */,
+				B3C0872C2B310C9D009AFCA2 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

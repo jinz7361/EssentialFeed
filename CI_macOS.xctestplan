@@ -19,6 +19,11 @@
           "containerPath" : "container:EssentialFeed.xcodeproj",
           "identifier" : "B35D94962ADB4998005AAA42",
           "name" : "EssentialFeed"
+        },
+        {
+          "containerPath" : "container:EssentialFeed.xcodeproj",
+          "identifier" : "B37E98342B38EB8200D3E21B",
+          "name" : "EssentialFeediOS"
         }
       ]
     },

@@ -166,6 +166,7 @@
 		B30D52062B45138900BAF424 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
 		B30D52092B4514CE00BAF424 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		B30D520B2B45151600BAF424 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		B30D520C2B45155900BAF424 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		B327005E2B26761F0025D94C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		B32700622B268E9A0025D94C /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
 		B32700672B2691980025D94C /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -746,6 +747,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = B35D948D2ADB4998005AAA42;
 			productRefGroup = B35D94982ADB4998005AAA42 /* Products */;
@@ -956,6 +958,7 @@
 			children = (
 				B30D52092B4514CE00BAF424 /* en */,
 				B30D520B2B45151600BAF424 /* pt-BR */,
+				B30D520C2B45155900BAF424 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";

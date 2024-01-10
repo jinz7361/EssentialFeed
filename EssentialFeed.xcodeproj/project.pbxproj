@@ -472,9 +472,9 @@
 		B35D94A52ADB4998005AAA42 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B35D94A62ADB4998005AAA42 /* EssentialFeedTests.swift */,
 				B39CDD132B1C3476008FCC66 /* Helpers */,
 				B3C086E52B2AACF9009AFCA2 /* Feed Cache */,
-				B35D94A62ADB4998005AAA42 /* EssentialFeedTests.swift */,
 				B39CDD102B19882D008FCC66 /* Feed API */,
 				B39CBE292B4E36C7001DD3DE /* Feed Presentation */,
 			);

@@ -167,31 +167,4 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         
         wait(for: [exp], timeout: 1.0)
     }
-    
-    private class HTTPClientSpy: HTTPClient {
-        private var messgaes = [(url: URL, completion: (HTTPClient.Result) -> Void)]()
-        
-        var requestedURLs: [URL] {
-            return messgaes.map { $0.url }
-        }
-        
-        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
-            messgaes.append((url, completion))
-        }
-        
-        func complete(with error: Error, at index: Int = 0) {
-            messgaes[index].completion(.failure(error))
-        }
-        
-        func complete(withStatusCode code: Int, data: Data, at index: Int = 0) {
-            let response = HTTPURLResponse(
-                url: requestedURLs[index],
-                statusCode: code,
-                httpVersion: nil,
-                headerFields: nil
-            )!
-            
-            messgaes[index].completion(.success((data, response)))
-        }
-    }
 }

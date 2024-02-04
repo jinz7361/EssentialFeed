@@ -106,6 +106,7 @@
 		B3F3DAF72B6EECD4008C5A96 /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3DAF62B6EECD4008C5A96 /* CacheFeedImageDataUseCaseTests.swift */; };
 		B3F3DAF92B6EF5FC008C5A96 /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3DAF82B6EF5FC008C5A96 /* CoreDataFeedImageDataStoreTests.swift */; };
 		B3F3DAFF2B6F04E4008C5A96 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3DAFE2B6F04E4008C5A96 /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
+		B3F3DB012B6F42A5008C5A96 /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3DB002B6F42A5008C5A96 /* CoreDataFeedStore+FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +265,7 @@
 		B3F3DAF82B6EF5FC008C5A96 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
 		B3F3DAFD2B6F02D9008C5A96 /* FeedStore2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore2.xcdatamodel; sourceTree = "<group>"; };
 		B3F3DAFE2B6F04E4008C5A96 /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
+		B3F3DB002B6F42A5008C5A96 /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -658,6 +660,7 @@
 				B3C087292B310547009AFCA2 /* ManagedFeedImage.swift */,
 				B3C0871E2B30F745009AFCA2 /* CoreDataFeedStore.swift */,
 				B3F3DAFE2B6F04E4008C5A96 /* CoreDataFeedStore+FeedImageDataLoader.swift */,
+				B3F3DB002B6F42A5008C5A96 /* CoreDataFeedStore+FeedStore.swift */,
 				B3C087202B30FA1A009AFCA2 /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -934,6 +937,7 @@
 				B39CBE3A2B4E488D001DD3DE /* FeedLoadingViewModel.swift in Sources */,
 				B35D94B62ADB60D9005AAA42 /* FeedLoader.swift in Sources */,
 				B3C0871F2B30F745009AFCA2 /* CoreDataFeedStore.swift in Sources */,
+				B3F3DB012B6F42A5008C5A96 /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				B3C087282B310530009AFCA2 /* ManagedCache.swift in Sources */,
 				B39CBE382B4E4845001DD3DE /* FeedViewModel.swift in Sources */,
 				B39CBE582B60B03A001DD3DE /* FeedImageDataStore.swift in Sources */,

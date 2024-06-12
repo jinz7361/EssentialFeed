@@ -179,8 +179,8 @@
 			children = (
 				B32144652B741136009F2E59 /* Helpers */,
 				B32144382B702B62009F2E59 /* FeedLoaderWithFallbackCompositeTests.swift */,
-				B321443C2B703F80009F2E59 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				B34713002C168CD400D9CFB7 /* FeedLoaderCacheDecoratorTests.swift */,
+				B321443C2B703F80009F2E59 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				B355046A2C1A473300C2443D /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 			);
 			path = EssentialAppTests;

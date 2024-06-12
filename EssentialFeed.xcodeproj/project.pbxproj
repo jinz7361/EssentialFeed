@@ -40,6 +40,8 @@
 		B32700712B27C0840025D94C /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39CDD142B1C34BB008FCC66 /* XCTestCase+MemoryLeakTracking.swift */; };
 		B347D4962AFD82AF002C6817 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D4952AFD82AF002C6817 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		B347D4992AFEC6E2002C6817 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D4982AFEC6E2002C6817 /* RemoteFeedLoader.swift */; };
+		B35504672C1A45E800C2443D /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35504662C1A45E800C2443D /* FeedCache.swift */; };
+		B35504712C1A4DE400C2443D /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35504702C1A4DE400C2443D /* FeedImageDataCache.swift */; };
 		B35D949C2ADB4998005AAA42 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = B35D949B2ADB4998005AAA42 /* EssentialFeed.docc */; };
 		B35D94A22ADB4998005AAA42 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35D94972ADB4998005AAA42 /* EssentialFeed.framework */; };
 		B35D94A72ADB4998005AAA42 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D94A62ADB4998005AAA42 /* EssentialFeedTests.swift */; };
@@ -195,6 +197,8 @@
 		B32700722B27C28A0025D94C /* CI_macOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_macOS.xctestplan; sourceTree = "<group>"; };
 		B347D4952AFD82AF002C6817 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		B347D4982AFEC6E2002C6817 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		B35504662C1A45E800C2443D /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
+		B35504702C1A4DE400C2443D /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		B35D94972ADB4998005AAA42 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35D949A2ADB4998005AAA42 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		B35D949B2ADB4998005AAA42 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -489,6 +493,8 @@
 				B35D94B32ADB6007005AAA42 /* FeedImage.swift */,
 				B35D94B52ADB60D9005AAA42 /* FeedLoader.swift */,
 				B39CBE442B5B0337001DD3DE /* FeedImageDataLoader.swift */,
+				B35504662C1A45E800C2443D /* FeedCache.swift */,
+				B35504702C1A4DE400C2443D /* FeedImageDataCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -813,7 +819,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					B32700662B2691980025D94C = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -930,6 +936,7 @@
 				B327005F2B26761F0025D94C /* URLSessionHTTPClient.swift in Sources */,
 				B3F3DAFF2B6F04E4008C5A96 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
 				B347D4992AFEC6E2002C6817 /* RemoteFeedLoader.swift in Sources */,
+				B35504712C1A4DE400C2443D /* FeedImageDataCache.swift in Sources */,
 				B39CBE412B548C01001DD3DE /* FeedImagePresenter.swift in Sources */,
 				B39CDD0D2B197E2A008FCC66 /* HTTPClient.swift in Sources */,
 				B39CBE4C2B5F1B19001DD3DE /* RemoteFeedImageDataLoader.swift in Sources */,
@@ -941,6 +948,7 @@
 				B3C087282B310530009AFCA2 /* ManagedCache.swift in Sources */,
 				B39CBE382B4E4845001DD3DE /* FeedViewModel.swift in Sources */,
 				B39CBE582B60B03A001DD3DE /* FeedImageDataStore.swift in Sources */,
+				B35504672C1A45E800C2443D /* FeedCache.swift in Sources */,
 				B39CBE432B548C89001DD3DE /* FeedImageViewModel.swift in Sources */,
 				B39CBE452B5B0337001DD3DE /* FeedImageDataLoader.swift in Sources */,
 				B39CDD0F2B197E8F008FCC66 /* FeedItemsMapper.swift in Sources */,
@@ -1092,6 +1100,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1109,6 +1118,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1157,6 +1167,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1175,6 +1186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1224,6 +1236,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1236,6 +1249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1250,9 +1264,11 @@
 		B35D94AC2ADB4998005AAA42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1282,9 +1298,11 @@
 		B35D94AD2ADB4998005AAA42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1317,6 +1335,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1334,6 +1353,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1348,6 +1368,7 @@
 		B37E98472B38EB8300D3E21B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1381,6 +1402,7 @@
 		B37E98482B38EB8300D3E21B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1459,6 +1481,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -1476,6 +1499,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5KNUB6Z8L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;

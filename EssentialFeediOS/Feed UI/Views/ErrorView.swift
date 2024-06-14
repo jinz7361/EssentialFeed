@@ -22,6 +22,8 @@ public final class ErrorView: UIView {
         super.awakeFromNib()
 
         button.setTitle(nil, for: .normal)
+        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.textAlignment = .center
         alpha = 0
     }
 

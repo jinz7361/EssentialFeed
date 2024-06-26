@@ -8,17 +8,13 @@
 import XCTest
 import EssentialFeed
 
-class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
+class ImageCommentsMapperTests: XCTestCase {
     func test_load_deliversErrorOnNon2xxHTTPResponse() {
-        let (sut, client) = makeSUT()
-        
+        let json = makeItemsJSON([])
         let samples = [199, 150, 300, 400, 500]
         
-        samples.enumerated().forEach { index, code in
-            expect(sut, toCompleteWith: failure(.invalidData), when: {
-                let json = makeItemsJSON([])
-                client.complete(withStatusCode: code, data: json, at: index)
-            })
+        samples.forEach { code in
+            ImageCommentsMapper.map(json, from: HTTPURLResponse(status: code))
         }
     }
     

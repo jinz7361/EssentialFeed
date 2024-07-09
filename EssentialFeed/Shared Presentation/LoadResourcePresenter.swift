@@ -25,31 +25,16 @@ public final class LoadResourcePresenter {
         self.errorView = errorView
     }
     
-    public static var title: String {
-        return NSLocalizedString("FEED_VIEW_TITLE",
-                                 tableName: "Feed",
-                                 bundle: Bundle(for: FeedPresenter.self),
-                                 comment: "Title for the feed view")
-    }
-    
-    // data in -> creates view models -> data out to the UI
-    
-    // [FeedImage] -> creates view models -> sends to the UI
-    // [ImageComments] -> creates view models -> sends to the UI
-    // Data -> UIImage -> send to the UI
-    // Resource -> creates ResourceViewModel -> sends to the UI
     public func didFinishLoadingFeed(with feed: [FeedImage]) {
         feedView.display(FeedViewModel(feed: feed))
         loadingview.display(FeedLoadingViewModel(isLoading: false))
     }
     
-    // Void -> creates view models -> sends to the UI
     public func didStartLoadingFeed() {
         errorView.display(.noError)
         loadingview.display(FeedLoadingViewModel(isLoading: true))
     }
     
-    // Errors -> creates view models -> sends to the UI
     public func didFinishLoadingFeed(with error: Error) {
         errorView.display(.error(message: feedLoadError))
         loadingview.display(FeedLoadingViewModel(isLoading: false))

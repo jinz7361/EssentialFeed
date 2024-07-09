@@ -30,7 +30,7 @@ public final class LoadResourcePresenter {
         loadingview.display(FeedLoadingViewModel(isLoading: false))
     }
     
-    public func didStartLoadingFeed() {
+    public func didStartLoading() {
         errorView.display(.noError)
         loadingview.display(FeedLoadingViewModel(isLoading: true))
     }

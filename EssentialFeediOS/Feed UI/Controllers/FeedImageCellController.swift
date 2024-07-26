@@ -44,6 +44,10 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
         return cell!
     }
     
+//    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        delegate.didRequestImage()
+//    }
+    
     public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cancelLoad()
     }
